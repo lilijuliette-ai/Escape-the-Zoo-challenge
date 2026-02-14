@@ -1,0 +1,47 @@
+name = input("Hey type your name here: ")
+print("Hello agent", name ,"we are stuck in a feral zoo and need to get out..")
+#"S" + "T" ="ST"
+should_we_play = input("Do you want to play? ").lower()
+# != means not equal to
+if should_we_play == "y" or should_we_play == "yes" :
+    print("We are gonna play!")
+    print("Lets get started")
+
+    direction = input("Should we go left or right? (left/right)")
+    if direction == "left":
+        print("Uh oh, the lion is sleeping there he was hungry, game over , try again")
+    elif direction == "right" :
+        choice= input("You've found yourself at the hot dog stand,do you go round or jump over? (round/jump)")
+        if choice == "jump" :
+            building= input("That was a close one, now do I go to the reptile building or birds (reptile/birds)")
+            if building == "reptile" :
+                directiontwo =input("You picked the most dangerous option..but you are safe.. All the snakes have disappeared! Do you go left or right (left/right)")
+                if directiontwo == "left":
+                    wall =input("Ok, no snakes here but the corridor has come to a dead end do you smash the wall or run back the other way (smash/run)")
+                    if wall == "smash" :
+                        print("You're not that strong and broke your wrists,game over, try again")
+                    else:
+                        nextstep =input("Good call! Should we now go towards the outside animal cages or to the food court(cages/court) ")
+                        if nextstep == "cages":
+                            letter =input("We found a letter should we open it?(no/yes)")
+                            if letter == "yes" :
+                                print("The letter informs you that to open the main gates of the zoo you need to activate it, hide for now")
+                            else:
+                                print("Your boring, game over, try again")
+                elif directiontwo == "right":
+                    directionthree= input("Your're doing great but..ah another cross road! Left or right? (left/right)")
+                    if directionthree == "left":
+                        print("You were doomed from when you first turned in the reptile building.. game over, try again")
+                    else:
+                        print("You were doomed from when you first turned in the reptile building.. game over, try again")
+            else:
+                print("The birds pecked at your face and you passed out, try again")    
+        else:
+            print("There was a feral monkey hiding next to it you die! try again")
+    else:
+        print("Sorry not a valid response, the crocodile ate you")
+else :
+    print("We are not playing then..")
+#this is one chain of if
+#learned about the and and or operater and now will include this above
+# can use the not operator to do the opposite
